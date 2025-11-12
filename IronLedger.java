@@ -23,7 +23,6 @@ class Item {
     }
 }
 
-public class IrongLedger {
 public class IronLedger {
 
     static List<Item> items = new ArrayList<>();
