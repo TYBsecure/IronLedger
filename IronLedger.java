@@ -24,6 +24,7 @@ class Item {
 }
 
 public class IrongLedger {
+public class IronLedger {
 
     static List<Item> items = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
