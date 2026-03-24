@@ -1,0 +1,5 @@
+# Compiled Java bytecode
+*.class
+
+# Runtime data files
+*.csv
