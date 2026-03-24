@@ -1,4 +1,3 @@
-// Sale.java
 // Represents a single sale transaction.
 
 public class Sale {

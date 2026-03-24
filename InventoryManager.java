@@ -1,6 +1,6 @@
-// InventoryManager.java
+
 // Handles everything to do with inventory - adding, viewing, restocking, and reorder checks.
-// SalesManager handles sales, FileHandler handles files. This class doesn't touch either.
+
 
 import java.util.List;
 import java.util.Scanner;

@@ -1,4 +1,3 @@
-// IronLedger.java
 // Entry point for the application.
 // Creates all the managers, loads saved data, and runs the menu.
 // All actual logic lives in InventoryManager, SalesManager and FileHandler.

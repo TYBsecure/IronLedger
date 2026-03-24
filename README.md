@@ -1,21 +1,31 @@
-# IrongLedger
+# IronLedger
 
-A simple Java inventory management system that allows users to:
-
-- Enter stock data for new items
-- Record sales and calculate totals
-- Display items that need to be reordered
-- Restock existing items
-
-## Usage
-
-1. Compile and run `IrongLedger.java` in your preferred IDE or terminal.
-2. Follow the menu prompts to manage inventory.
+A simple Java inventory management system built with OOP principles.
 
 ## Features
+- Add and manage stock items
+- Record sales and calculate totals
+- Reorder alerts when stock drops below threshold
+- Restock existing items
+- Data saved automatically to CSV on exit
 
-- Tracks stock levels, unit cost, unit price
-- Alerts when stock goes below threshold
-- Calculates total sales and reorder costs
+## How to Run
 
-Still in the making. New upgrades coming soon
+**Using terminal:**
+```bash
+javac *.java
+java IronLedger
+```
+
+**Using VS Code:**
+Open `IronLedger.java` and click the Run button above the main method.
+
+## Project Structure
+- `IronLedger.java` — entry point and menu
+- `InventoryManager.java` — manages stock items
+- `SalesManager.java` — handles sales transactions
+- `FileHandler.java` — reads and writes CSV files
+- `Item.java` — product data model
+- `Sale.java` — sale transaction data model
+
+Still in the making. New upgrades coming soon.

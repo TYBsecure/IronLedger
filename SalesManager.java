@@ -1,7 +1,6 @@
-// SalesManager.java
 // Handles recording sales and tracking sale history for the session.
 // Talks to InventoryManager to find items and update stock levels.
-// FileHandler saves the sales list on exit.
+
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
