@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- The project's name tag: groupId is the family, artifactId the first name -->
+  <groupId>com.ironledger</groupId>
+  <artifactId>ironledger</artifactId>
+  <version>0.1.0</version>
+  <packaging>jar</packaging>
+
+  <properties>
+    <!-- Use Java 21 rules when compiling -->
+    <maven.compiler.release>21</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.version>5.11.4</junit.version>
+  </properties>
+
+  <!-- Libraries we borrow. Maven downloads them for us -->
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>${junit.version}</version>
+      <!-- test scope: only used in the quality-check room, never shipped -->
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <!-- The finished file will be called ironledger.jar -->
+    <finalName>ironledger</finalName>
+    <!-- Plugins are machines in the factory, each with one job -->
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId> <!-- turns .java into runnable code -->
+        <version>3.13.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId> <!-- runs the tests -->
+        <version>3.5.2</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId> <!-- packs everything into one .jar file -->
+        <version>3.4.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <!-- The front door: which class starts the program -->
+              <mainClass>com.ironledger.IronLedger</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

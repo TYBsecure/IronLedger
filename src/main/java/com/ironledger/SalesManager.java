@@ -1,3 +1,5 @@
+package com.ironledger;
+
 // Handles recording sales and tracking sale history for the session.
 // Talks to InventoryManager to find items and update stock levels.
 
