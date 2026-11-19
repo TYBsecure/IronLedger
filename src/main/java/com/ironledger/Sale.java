@@ -1,3 +1,5 @@
+package com.ironledger;
+
 // Represents a single sale transaction.
 
 public class Sale {

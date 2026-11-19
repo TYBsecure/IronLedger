@@ -1,3 +1,5 @@
+package com.ironledger;
+
 // This class is purely a data container - it just holds the info for one product.
 // No logic, no menus, no file reading. Just the data and ways to access it.
 

@@ -3,3 +3,4 @@
 
 # Runtime data files
 *.csv
+target/
